@@ -1,0 +1,162 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+#left-container {
+    background-color: #eee6e6;
+    position: absolute;
+    width: 15%;
+    border-radius: 20px;
+    top: 10px;
+    bottom: 10px;
+    left: 1%;
+    height: 95.5%;
+    padding: 5px;
+}
+
+#right-container {
+    background-color: #eee6e6;
+    position: absolute;
+    width: 15%;
+    top: 10px;
+    border-radius: 20px;
+    right: 1%;
+    bottom: 10px;
+    height: 95.5%;
+    padding: 5px;
+}
+
+.plant-holder {
+    position: relative;
+    width: 15%;
+    height: 105px;
+    left: -10px;
+}
+
+.plant {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+#left-container div img {
+    height: 95px;
+    left: 60px;
+    top: -10px;
+}
+
+#right-container div img {
+    height: 100px;
+    right: -140px;
+    top: -5px;
+}
+
+.jar-walls {
+    background-color: #c8c5c59f;
+    position: absolute;
+    left: 28%;
+    border-radius: 20px;
+    top: 20%;
+    bottom: 10%;
+    right: 30%;
+}
+
+.jar-top {
+    background-color: #d1e1df;
+    position: absolute;
+    left: 33%;
+    right: 35%;
+    top: 100px;
+    bottom: 593px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.dirt {
+    background-color: #75330c62;
+    position: absolute;
+    left: 28%;
+    right: 30%;
+    top: 620px;
+    bottom: 74.5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.jar-handle-long {
+    background-color: #bbb5b5;
+    position: absolute;
+    right: -10%;
+    left: 100%;
+    bottom: 20%;
+    top: 15%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.jar-handle-short {
+    background-color: #ffffff;
+    position: absolute;
+    right: -8%;
+    left: 102%;
+    bottom: 25%;
+    top: 20%;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+@keyframes slide-left-to-right {
+    0% {
+        transform: translateX(-80%);
+    }
+}
+
+#left-container div img {
+    animation: slide-left-to-right 1.5s ease-in-out;
+}
+
+#left-container {
+    animation: slide-left-to-right 1.5s ease-in-out;
+}
+
+@keyframes slide-right-to-left {
+    0% {
+        transform: translateX(80%);
+    }
+}
+
+#right-container div img {
+    animation: slide-right-to-left 1.5s ease-in-out;
+}
+
+#right-container {
+    animation: slide-right-to-left 1.5s ease-in-out;
+}
+
+@keyframes down-to-up {
+    0% {
+        transform: translateY(100%);
+    }
+}
+
+#terrarium div {
+    animation: down-to-up 1.5s ease-in-out;
+}
+
+@keyframes up-to-down {
+    0% {
+        transform: translateY(-100%);
+    }
+}
+
+h1 {
+    animation: up-to-down 1.5s ease-in-out;
+}
